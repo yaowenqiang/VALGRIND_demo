@@ -25,3 +25,7 @@ default suppressions file
 
 > valgrind --hel0p-debug
 
+
+valgrind  -vgdb=yes --vgdb-error=0 ./a
+> gdb ./a
+> gdb > target remote | vgdb
