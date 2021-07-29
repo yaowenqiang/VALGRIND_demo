@@ -31,3 +31,5 @@ valgrind  -vgdb=yes --vgdb-error=0 ./a
 > gdb > target remote | vgdb
 
 $ valgrind  --track-origins=yes  ./printf
+> valgrind  --tool=helgrind   --read-var-info=yes  ./data_race
+> valgrind  --tool=drd --read-var-info=yes ./data_race
